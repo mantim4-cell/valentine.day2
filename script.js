@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let noClickCount = 0;
 
+yesBtn.addEventListener("click", () => {
+    alert("Best decision ever ❤️🥰");
+});
+
     noBtn.addEventListener("click", function () {
         noClickCount++;
 
