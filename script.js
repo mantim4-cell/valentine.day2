@@ -30,16 +30,12 @@ yesBtn.addEventListener("click", () => {
         yesBtn.style.transform = `translate(-50%, -50%) scale(${1 + noClickCount * 0.3})`;
 
         // Redirect on 6th click
-        if (noClickCount >= 6) {
+        if (noClickCount <= 6) {
             window.location.href = "second.html";
         }
         else {
         window.location.href = "second.html";
         }
-    });
-
-    yesBtn.addEventListener("click", function () {
-        window.location.href = "second.html";
     });
 
 });
