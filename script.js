@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-
     const noBtn = document.getElementById("noBtn");
     const yesBtn = document.getElementById("yesBtn");
 
@@ -8,11 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 yesBtn.addEventListener("click", () => {
     alert("Best decision ever ❤️🥰");
 });
-
-    noBtn.addEventListener("click", function () {
+    noBtn.addEventListener("click", () => {
         noClickCount++;
 
-        // Move NO button
+    if (noClickCount <= 6) {
         const maxX = window.innerWidth - noBtn.offsetWidth;
         const maxY = window.innerHeight - noBtn.offsetHeight;
 
@@ -30,13 +27,9 @@ yesBtn.addEventListener("click", () => {
         yesBtn.style.transform = `translate(-50%, -50%) scale(${1 + noClickCount * 0.3})`;
 
         // Redirect on 6th click
-        if (noClickCount >= 6) {
-            window.location.href = "second.html";
-        }
-    });
+    }
+    else {
+    window.location.href = "second.html";
+    }  
 
-    yesBtn.addEventListener("click", function () {
-        window.location.href = "second.html";
     });
-
-});
