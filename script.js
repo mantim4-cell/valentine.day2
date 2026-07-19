@@ -11,8 +11,8 @@ yesBtn.addEventListener("click", () => {
     noBtn.addEventListener("click", function () {
         noClickCount++;
 
-    if (noClickCount >= 6) {
-        
+    if (noClickCount <= 6) {
+    
         // Move NO button
         const maxX = window.innerWidth - noBtn.offsetWidth;
         const maxY = window.innerHeight - noBtn.offsetHeight;
@@ -31,11 +31,11 @@ yesBtn.addEventListener("click", () => {
         yesBtn.style.transform = `translate(-50%, -50%) scale(${1 + noClickCount * 0.3})`;
 
         // Redirect on 6th click
-    }    
-    });
-
-else {
+    }
+    else {
     window.location.href = "second.html";
-}
+    }  
+
+    });
 
 });
