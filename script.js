@@ -8,12 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 yesBtn.addEventListener("click", () => {
     alert("Best decision ever ❤️🥰");
 });
-
-if (noClickCount <= 6) {
-            
     noBtn.addEventListener("click", function () {
         noClickCount++;
 
+    if (noClickCount <= 6) {
+        
         // Move NO button
         const maxX = window.innerWidth - noBtn.offsetWidth;
         const maxY = window.innerHeight - noBtn.offsetHeight;
@@ -32,9 +31,9 @@ if (noClickCount <= 6) {
         yesBtn.style.transform = `translate(-50%, -50%) scale(${1 + noClickCount * 0.3})`;
 
         // Redirect on 6th click
-        
+    }    
     });
-}
+
 else {
     window.location.href = "second.html";
 }
