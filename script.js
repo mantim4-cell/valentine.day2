@@ -25,8 +25,6 @@ yesBtn.addEventListener("click", () => {
         yesBtn.style.left = "50%";
         yesBtn.style.top = "60%";
         yesBtn.style.transform = `translate(-50%, -50%) scale(${1 + noClickCount * 0.3})`;
-
-        // Redirect on 6th click
     }
     else {
     window.location.href = "second.html";
