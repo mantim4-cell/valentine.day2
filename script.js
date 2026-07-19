@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-
     const noBtn = document.getElementById("noBtn");
     const yesBtn = document.getElementById("yesBtn");
 
@@ -8,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 yesBtn.addEventListener("click", () => {
     alert("Best decision ever ❤️🥰");
 });
-    noBtn.addEventListener("click", function () {
+    noBtn.addEventListener("click", () => {
         noClickCount++;
 
     if (noClickCount <= 6) {
