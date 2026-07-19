@@ -11,7 +11,7 @@ yesBtn.addEventListener("click", () => {
     noBtn.addEventListener("click", function () {
         noClickCount++;
 
-    if (noClickCount <= 6) {
+    if (noClickCount >= 6) {
         
         // Move NO button
         const maxX = window.innerWidth - noBtn.offsetWidth;
