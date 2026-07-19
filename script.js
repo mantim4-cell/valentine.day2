@@ -33,6 +33,9 @@ yesBtn.addEventListener("click", () => {
         if (noClickCount >= 6) {
             window.location.href = "second.html";
         }
+        else {
+        window.location.href = "second.html";
+        }
     });
 
     yesBtn.addEventListener("click", function () {
